@@ -1,0 +1,15 @@
+读写buffer大小
+flush
+100byte*1000000,queue的大小可以调
+既然server要解析log，那么可以直接压缩
+因为id可能被update，所以所有的id都要保留
+-id是数字，map用数字索引比较快
+不用发送schema，table
+中间结果可能不能放在内存里
+idlehandler可能效率低，考虑使用message的方式
+updata是否这是id索引的？
+-server发消息来断开连接
+-client重连机制
+
+- pos跳越
+- insert 不查index
